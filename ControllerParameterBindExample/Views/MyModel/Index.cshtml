@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ControllerParameterBindExample.Models.MyModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Property1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Property2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Property3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Property4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Property5)
+        </th>
+        <th></th>
+    </tr>
+@if(Model!=null)
+{ 
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Property1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Property2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Property3)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Property4)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Property5)
+            </td>
+        </tr>
+    }
+}
+</table>
