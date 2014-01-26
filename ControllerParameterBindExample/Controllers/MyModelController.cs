@@ -53,7 +53,7 @@ namespace ControllerParameterBindExample.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateWithBindingInclude([Bind(Exclude = "Property1, Property2")]MyModel model)
+        public ActionResult CreateWithBindingInclude([Bind(Include = "Property1, Property2")]MyModel model)
         {
             SetViewBagFromModel(model);
             return View("Create");
