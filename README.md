@@ -7,5 +7,5 @@ This show simple example of how works Asp.Net MVC with the Bind Attribute for co
 3. Go to /MyModel/CreateWithBindingInclude. Do the same thing and you will see not all the properties. This time, it is white listed instead of black listed.
 
 #Links
-* [Blog Post](http://patrickdesjardins.com/blog) with some additional information.
+* [Blog Post](http://patrickdesjardins.com/blog/asp-net-bind-attribute-for-your-controller) with some additional information.
 
